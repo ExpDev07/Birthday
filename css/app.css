@@ -1,0 +1,92 @@
+.fixed-top-spacing {
+    margin-top: 54px;
+}
+.text-squeeze {
+    margin: 0 125px;
+}
+
+/*-----------------------------------------------*/
+/*----------------- Team Member -----------------*/
+/*-----------------------------------------------*/
+.team-container {
+    position: relative;
+    padding: 5em;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.5) inset;
+
+    background: url('../img/xbox.jpg');
+    background-position: center;
+    background-attachment: fixed;
+}
+.mchead-thanks {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    margin: 1em;
+}
+.team-offset {
+    margin-left: 12.5%;
+}
+
+/*----------------------------------------------------*/
+/*----------------- Team Member Head -----------------*/
+/*----------------------------------------------------*/
+.team-member {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+.team-member > img {
+    width: 100%;
+}
+
+.team-member > .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    background-color: black;
+    opacity: 0;
+    transition: opacity 250ms;
+}
+.team-member:hover > .overlay {
+    opacity: 0.5;
+    transition: opacity 250ms;
+}
+
+.team-member > .info {
+    position: absolute;
+    left: 0.75em;
+    bottom: -2em;
+    opacity: 0;
+
+    transition: bottom 250ms, opacity 250ms;
+}
+.team-member:hover > .info {
+    transition: bottom 500ms, opacity 500ms;
+    bottom: 0.5em;
+    opacity: 1;
+}
+
+.team-member > .info > span {
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+.team-head {
+    width: 100%;
+}
+
+/*--------------------------------------------*/
+/*----------------- Projects -----------------*/
+/*--------------------------------------------*/
+.project-container {
+    position: relative;
+    padding: 5em;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.5) inset;
+
+    background: url('../img/happy.png');
+    background-position: center;
+    background-attachment: fixed;
+}
